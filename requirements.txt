@@ -1,4 +1,4 @@
 pypdf
 weaviate-client
 nltk
-dotenv
+python-dotenv
