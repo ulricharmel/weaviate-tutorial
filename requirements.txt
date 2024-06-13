@@ -1,0 +1,4 @@
+pypdf
+weaviate-client
+nltk
+dotenv
