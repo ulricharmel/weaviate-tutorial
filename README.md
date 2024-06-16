@@ -16,6 +16,12 @@ Make sure to download ollama and pull the model version you specify in your envi
 
 The most expensive part of the code is the step that computes and adds the vector embeddings to the weaviate database. Hence use --pages flag to use only a few pgaes from your document. The chunking approach I use is to merge every 4 sentences together as one entry for the database.
 
+
 ```commandline
 python workflow.py [input_pdf_file] --pages [number_of_pages]
 ```
+
+### Limitations
+This workflow is very limited, for a proper RAG implementation, we will need a better parser such as maybe the llama-parser which has more efficient chunking strategies. 
+Also we can incomporate a grade to rate if the retriever context is relevant to the question, if this is not the case we instead do a web search. 
+Finally, we can also incomparate something to prevent hallucinations and output no answer if the model can confidently answer the question.
