@@ -25,3 +25,6 @@ python workflow.py [input_pdf_file] --pages [number_of_pages]
 This workflow is very limited, for a proper RAG implementation, we will need a better parser such as maybe the llama-parser which has more efficient chunking strategies. 
 Also we can incomporate a grade to rate if the retriever context is relevant to the question, if this is not the case we instead do a web search. 
 Finally, we can also incomparate something to prevent hallucinations and output no answer if the model can confidently answer the question.
+
+### For the second track
+Look at the job_listings_clustering notebook.
